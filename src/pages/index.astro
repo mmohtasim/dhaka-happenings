@@ -6,72 +6,132 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Events in Dhaka today and tomorrow, aggregated from local news feeds." />
     <title>Dhaka Happening — today &amp; tomorrow</title>
-    <style>
-      :root { --ink: #1a1a2e; --mut: #66708a; --line: #e4e4ee; --acc: #0f766e; }
+    <!-- is:global: cards/chips are built by runtime JS, so Astro's scoped selectors never match them -->
+    <style is:global>
+      :root {
+        --bg: #f5f6f8; --card: #ffffff; --ink: #16181d; --mut: #6b7280;
+        --line: #e5e7eb; --acc: #0f766e; --acc-soft: rgba(15, 118, 110, .08);
+        --shadow: 0 1px 2px rgba(16, 24, 40, .05);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1115; --card: #171a20; --ink: #e7e9ee; --mut: #9aa1ad;
+          --line: #262b33; --acc: #2dd4bf; --acc-soft: rgba(45, 212, 191, .1);
+          --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+        }
+      }
       * { box-sizing: border-box; }
-      body { margin: 0; font: 16px/1.55 system-ui, sans-serif; color: var(--ink); background: #fafaff; }
-      header { padding: 2rem 1rem 1rem; text-align: center; }
-      h1 { margin: 0; font-size: 2rem; }
-      #dates { color: var(--acc); font-weight: 600; margin: .4rem 0 0; }
-      #meta { color: var(--mut); font-size: .85rem; margin: .2rem 0 0; }
-      main { max-width: 1000px; margin: 0 auto; padding: 0 1rem 2rem; }
-      section { margin: 2rem 0; }
-      h2 { font-size: 1.25rem; border-bottom: 2px solid var(--line); padding-bottom: .3rem; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .8rem; }
-      .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
-      .card a { color: var(--ink); font-weight: 600; text-decoration: none; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Bengali", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: var(--acc); }
+      a:focus-visible { outline: 2px solid var(--acc); outline-offset: 2px; border-radius: 4px; }
+
+      header { max-width: 1060px; margin: 0 auto; padding: 2.5rem 1rem 1.25rem; text-align: center; }
+      h1 { margin: 0; font-size: 1.9rem; font-weight: 700; letter-spacing: -.02em; }
+      #meta { margin: .25rem 0 0; color: var(--mut); font-size: .85rem; }
+      #dates { margin: 1rem 0 0; display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
+      .chip {
+        padding: .35rem .8rem; border: 1px solid var(--line); border-radius: 999px;
+        background: var(--card); font-size: .85rem; font-weight: 600; box-shadow: var(--shadow);
+      }
+      .chip b { color: var(--acc); font-weight: 600; margin-right: .35rem; }
+
+      main { max-width: 1060px; margin: 0 auto; padding: 0 1rem 2rem; }
+      section { margin: 1.75rem 0; }
+      h2 {
+        margin: 0 0 .75rem; font-size: .95rem; font-weight: 600; letter-spacing: .05em;
+        text-transform: uppercase; color: var(--mut);
+        display: flex; align-items: center; gap: .5rem;
+      }
+      h2 .count {
+        background: var(--acc-soft); color: var(--acc); border-radius: 999px;
+        font-size: .75rem; padding: .1rem .55rem; letter-spacing: 0;
+      }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .75rem; }
+
+      .card {
+        display: flex; flex-direction: column; gap: .45rem;
+        background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+        padding: 1rem 1.1rem; box-shadow: var(--shadow);
+        transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+      }
+      .card:hover { border-color: var(--acc); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(16, 24, 40, .08); }
+      .card a { color: var(--ink); font-weight: 600; text-decoration: none; line-height: 1.4; }
       .card a:hover { color: var(--acc); }
-      .card p { margin: .4rem 0; color: #444; font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-      .card .src { color: var(--mut); font-size: .78rem; }
-      .empty { color: var(--mut); font-style: italic; }
-      footer { max-width: 1000px; margin: 0 auto; padding: 1rem; color: var(--mut); font-size: .8rem; border-top: 1px solid var(--line); }
+      .card p {
+        margin: 0; color: var(--mut); font-size: .92rem;
+        display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+      }
+      .card .src { color: var(--mut); font-size: .78rem; margin-top: auto; }
+
+      .empty {
+        grid-column: 1 / -1; text-align: center; color: var(--mut); font-size: .9rem;
+        border: 1px dashed var(--line); border-radius: 14px; padding: 1.5rem 1rem; margin: 0;
+      }
+
+      footer {
+        max-width: 1060px; margin: 0 auto; padding: 1.25rem 1rem 2rem; text-align: center;
+        color: var(--mut); font-size: .8rem; border-top: 1px solid var(--line);
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Dhaka Happening</h1>
-      <p id="dates"></p>
       <p id="meta">loading…</p>
+      <p id="dates"></p>
     </header>
     <main>
-      <section><h2>Happening today</h2><div class="grid" id="today"></div></section>
-      <section><h2>Tomorrow in Dhaka</h2><div class="grid" id="tomorrow"></div></section>
-      <section><h2>Possibly relevant — no date in the headline</h2><div class="grid" id="nodate"></div></section>
+      <section><h2>Today <span class="count" id="today-count"></span></h2><div class="grid" id="today"></div></section>
+      <section><h2>Tomorrow <span class="count" id="tomorrow-count"></span></h2><div class="grid" id="tomorrow"></div></section>
+      <section><h2>No date given <span class="count" id="nodate-count"></span></h2><div class="grid" id="nodate"></div></section>
     </main>
     <footer id="sources"></footer>
     <script>
       const $ = id => document.getElementById(id);
       const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
       const fmtDate = d => new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dhaka', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+      const isGoogle = ev => ev.source.startsWith('Google News');
+      const cleanTitle = ev => { // Google News titles end with " - Publisher"; cut at the last " - " (publisher names may contain hyphens)
+        if (!isGoogle(ev)) return ev.title;
+        const i = ev.title.lastIndexOf(' - ');
+        return i > 0 ? ev.title.slice(0, i) : ev.title;
+      };
 
       function card(ev) {
         const el = document.createElement('article');
         el.className = 'card';
         const when = ev.published ? ' · ' + new Date(ev.published).toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '';
-        el.innerHTML = `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(ev.title)}</a>`
-          + (ev.summary ? `<p>${esc(ev.summary)}</p>` : '')
-          + `<div class="src">${esc(ev.source)}${ev.cue ? ' · ' + ev.cue : ''}${when}</div>`;
+        el.innerHTML = `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(cleanTitle(ev))}</a>`
+          // Google News summaries are just the headline + site name again — skip them.
+          + (!isGoogle(ev) && ev.summary ? `<p>${esc(ev.summary)}</p>` : '')
+          + `<div class="src">${esc(ev.source)}${when}</div>`;
         return el;
       }
 
       function fill(list, elId) {
         const box = $(elId);
+        $(elId + '-count').textContent = list.length || '';
         box.innerHTML = '';
-        if (!list.length) { box.innerHTML = '<p class="empty">nothing tagged yet — the crawler is still collecting</p>'; return; }
+        if (!list.length) { box.innerHTML = '<p class="empty">nothing here yet — the crawler is still collecting</p>'; return; }
         for (const ev of list) box.appendChild(card(ev));
       }
 
       async function load() {
         try {
           const data = await (await fetch('events.json', { cache: 'no-store' })).json(); // relative: works under any Pages base path
-          $('dates').textContent = `Today · ${fmtDate(new Date())} — Tomorrow · ${fmtDate(new Date(Date.now() + 86400000))}`;
-          $('meta').textContent = `${data.today.length} today · ${data.tomorrow.length} tomorrow · ${data.noDate.length} unsorted · data refreshed `
-            + new Date(data.generatedAt).toLocaleTimeString('en-GB', { timeZone: 'Asia/Dhaka' });
+          $('dates').innerHTML = `<span class="chip"><b>Today</b>${esc(fmtDate(new Date()))}</span>`
+            + `<span class="chip"><b>Tomorrow</b>${esc(fmtDate(new Date(Date.now() + 86400000)))}</span>`;
+          $('meta').textContent = `data refreshed ${new Date(data.generatedAt).toLocaleTimeString('en-GB', { timeZone: 'Asia/Dhaka' })}`;
           fill(data.today, 'today');
           fill(data.tomorrow, 'tomorrow');
           fill(data.noDate, 'nodate');
-          $('sources').innerHTML = 'sources: ' + data.sources.map(s => `${esc(s.name)}${s.ok ? '' : ' (down)'}`).join(' · ')
+          $('sources').textContent = 'sources: ' + data.sources.map(s => `${s.name}${s.ok ? '' : ' (down)'}`).join(' · ')
             + ' — auto-refreshes every 5 min';
         } catch {
           $('meta').textContent = 'could not load events.json — run `npm run crawl:once` first';
