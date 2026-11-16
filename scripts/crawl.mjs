@@ -17,7 +17,9 @@ const FEEDS = [
   { name: 'Google News · Dhaka shows', url: 'https://news.google.com/rss/search?q=Dhaka+concert+OR+exhibition+OR+festival+when:2d&hl=en&gl=BD&ceid=BD:en', kind: 'search' },
 ];
 
-const KEYWORDS = /\b(concert|festival|exhibit\w*|fair\b|carnival|jatra|theatr\w*|drama|recital|gig\b|open mic|film\b|movie|premiere|screening|documentary|book fair|food fest\w*|expo\b|summit|conference|seminar|symposium|workshop|hackathon|meetup|competition|contest|olympiad|tournament|match\b|derby|marathon|walkathon|rally\b|parade|procession|fireworks|light show|drone show|fashion week|awards?|inaugurat\w*|unveil\w*|launch\w*|celebrat\w*|commemorat\w*|victory day|eid|mela|bijoy|puja|art\b|cultur\w*)\b/i;
+// things people can attend. Deliberately excludes news-report verbs (launch, celebrate, award, rally, procession) —
+// stories *about* those kept flooding the list; ponytail: keyword heuristics, an LLM pass is the upgrade path.
+const KEYWORDS = /\b(concert|festival|exhibit\w*|fair\b|carnival|jatra|theatr\w*|drama|recital|gig\b|open mic|film\b|movie|premiere|screening|documentary|book fair|food fest\w*|expo\b|summit|conference|seminar|symposium|workshop|hackathon|meetup|competition|contest|olympiad|tournament|match\b|derby|marathon|walkathon|parade|fireworks|light show|drone show|fashion week|inaugurat\w*|victory day|eid|mela|bijoy|puja|art\b|cultur\w*)\b/i;
 
 const decode = s => s.replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (m, e) => {
   if (e[0] === '#') {
@@ -118,9 +120,10 @@ async function cycle(state) {
     // ponytail: papers classify on title only — their RSS summaries carry promo blocks with stray dates; LLM pass if precision matters
     const { cue, kw } = classify({ title: e.item.title, summary: e.kind === 'search' ? e.item.summary : '' }, cues);
     const row = { title: e.item.title, url: e.item.link, source: e.source, summary: e.item.summary, cue, published: e.item.pub || null, firstSeenAt: e.firstSeenAt };
-    if (cue === 'today' && (e.kind === 'search' || kw)) buckets.today.push(row);
-    else if (cue === 'tomorrow' && (e.kind === 'search' || kw)) buckets.tomorrow.push(row);
-    else if (cue || e.kind === 'search' || kw) buckets.noDate.push(row);
+    // no event keyword → not an event, wherever it came from (was: search-feed items skipped this check)
+    if (kw && cue === 'today') buckets.today.push(row);
+    else if (kw && cue === 'tomorrow') buckets.tomorrow.push(row);
+    else if (kw) buckets.noDate.push(row);
   }
   buckets.noDate.sort((a, b) => (String(a.published) < String(b.published) ? 1 : -1)).splice(120);
 
@@ -148,6 +151,9 @@ function selftest() {
     if (got !== want) { console.error(`FAIL: "${input}" → "${got}", want "${want}"`); process.exit(1); }
   }
   if (!c('Bangladesh won the match yesterday').kw) { console.error('FAIL: keyword missed'); process.exit(1); }
+  for (const bad of ['Gopalganj DC, SP transferred after armed procession, vandalism', 'Shahjalal Islami Bank wins Gold Award', 'CSI launches new power station models in Dhaka']) {
+    if (c(bad).kw) { console.error(`FAIL: news story passed keyword filter: "${bad}"`); process.exit(1); }
+  }
   const pf = parseFeed('<rss><channel><item><title>T</title><link>http://x/y</link><description><![CDATA[a@b.com 16 November 2026 Editor\'s Pick]]></description></item></channel></rss>');
   if (pf.length !== 1 || pf[0].summary !== '') { console.error('FAIL: junk summary not dropped'); process.exit(1); }
   console.log('selftest ok —', partsAt(0).wd, partsAt(0).d, partsAt(0).mo, '/', tp.wd, tp.d, tp.mo);
