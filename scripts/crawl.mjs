@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-// ponytail: keyword + date-cue heuristics, not NLP — "he said today" can false-positive. Add an LLM pass over the same items if precision matters.
+// ponytail: keyword + date-cue heuristics, not NLP — "he said today" can false-positive.
+// No LLM API key on this machine, so the precision pass happens outside this script:
+// after crawling, a reviewed keep/drop curation is applied to public/events.json before pushing.
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
