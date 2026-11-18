@@ -1,5 +1,32 @@
 ---
-// Static shell; data comes from /events.json written by scripts/crawl.mjs — no rebuild needed while the crawler runs.
+// Fully static: cards are rendered at build time from public/events.json (crawl → curate → push → CI builds).
+// No client JS — the data only ever changes at deploy time, so there is nothing to refresh at runtime.
+import { readFileSync } from 'node:fs';
+
+let data = { today: [], tomorrow: [], noDate: [], sources: [], generatedAt: null };
+try {
+  data = { ...data, ...JSON.parse(readFileSync(new URL('../../public/events.json', import.meta.url), 'utf8')) };
+} catch { /* no crawl yet — page builds with empty sections */ }
+
+// Google News titles end with " - Publisher"; cut at the last " - " (publisher names may contain hyphens).
+const isGoogle = ev => ev.source.startsWith('Google News');
+const cleanTitle = ev => {
+  if (!isGoogle(ev)) return ev.title;
+  const i = ev.title.lastIndexOf(' - ');
+  return i > 0 ? ev.title.slice(0, i) : ev.title;
+};
+
+const dhaka = opts => new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dhaka', ...opts });
+const snap = data.generatedAt ? new Date(data.generatedAt) : null;
+const longDay = t => dhaka({ weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(t);
+const shortStamp = t => dhaka({ day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(t);
+const when = ev => ev.published ? ' · ' + shortStamp(new Date(ev.published)) : '';
+
+const sections = [
+  ['today', 'Today', snap ? longDay(snap.getTime()) : null],
+  ['tomorrow', 'Tomorrow', snap ? longDay(snap.getTime() + 86400000) : null],
+  ['noDate', 'No date given', null],
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -8,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Events in Dhaka today and tomorrow, aggregated from local news feeds." />
     <title>Dhaka Happening — today &amp; tomorrow</title>
-    <!-- is:global: cards/chips are built by runtime JS, so Astro's scoped selectors never match them -->
+    <!-- is:global: styles must apply to build-time markup freely; nothing here is runtime-scoped -->
     <style is:global>
       :root {
         --bg: #f5f6f8; --card: #ffffff; --ink: #16181d; --mut: #6b7280;
@@ -83,62 +110,32 @@
   <body>
     <header>
       <h1>Dhaka Happening</h1>
-      <p id="meta">loading…</p>
-      <p id="dates"></p>
+      <p id="meta">{snap ? `snapshot taken ${shortStamp(snap)} Dhaka` : 'no data yet — run `npm run crawl:once`'}</p>
+      {snap && (
+        <p id="dates">
+          <span class="chip"><b>Today</b>{longDay(snap.getTime())}</span>
+          <span class="chip"><b>Tomorrow</b>{longDay(snap.getTime() + 86400000)}</span>
+        </p>
+      )}
     </header>
     <main>
-      <section><h2>Today <span class="count" id="today-count"></span></h2><div class="grid" id="today"></div></section>
-      <section><h2>Tomorrow <span class="count" id="tomorrow-count"></span></h2><div class="grid" id="tomorrow"></div></section>
-      <section><h2>No date given <span class="count" id="nodate-count"></span></h2><div class="grid" id="nodate"></div></section>
+      {sections.map(([key, label, sub]) => (
+        <section>
+          <h2>{label}{sub && ` — ${sub}`} <span class="count">{data[key].length || ''}</span></h2>
+          <div class="grid">
+            {data[key].length ? data[key].map(ev => (
+              <article class="card">
+                <a href={ev.url} target="_blank" rel="noopener">{cleanTitle(ev)}</a>
+                {!isGoogle(ev) && ev.summary && <p>{ev.summary}</p>}
+                <div class="src">{ev.source}{when(ev)}</div>
+              </article>
+            )) : <p class="empty">nothing here right now</p>}
+          </div>
+        </section>
+      ))}
     </main>
-    <footer id="sources"></footer>
-    <script>
-      const $ = id => document.getElementById(id);
-      const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-      const fmtDate = d => new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Dhaka', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
-      const isGoogle = ev => ev.source.startsWith('Google News');
-      const cleanTitle = ev => { // Google News titles end with " - Publisher"; cut at the last " - " (publisher names may contain hyphens)
-        if (!isGoogle(ev)) return ev.title;
-        const i = ev.title.lastIndexOf(' - ');
-        return i > 0 ? ev.title.slice(0, i) : ev.title;
-      };
-
-      function card(ev) {
-        const el = document.createElement('article');
-        el.className = 'card';
-        const when = ev.published ? ' · ' + new Date(ev.published).toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '';
-        el.innerHTML = `<a href="${esc(ev.url)}" target="_blank" rel="noopener">${esc(cleanTitle(ev))}</a>`
-          // Google News summaries are just the headline + site name again — skip them.
-          + (!isGoogle(ev) && ev.summary ? `<p>${esc(ev.summary)}</p>` : '')
-          + `<div class="src">${esc(ev.source)}${when}</div>`;
-        return el;
-      }
-
-      function fill(list, elId) {
-        const box = $(elId);
-        $(elId + '-count').textContent = list.length || '';
-        box.innerHTML = '';
-        if (!list.length) { box.innerHTML = '<p class="empty">nothing here yet — the crawler is still collecting</p>'; return; }
-        for (const ev of list) box.appendChild(card(ev));
-      }
-
-      async function load() {
-        try {
-          const data = await (await fetch('events.json', { cache: 'no-store' })).json(); // relative: works under any Pages base path
-          $('dates').innerHTML = `<span class="chip"><b>Today</b>${esc(fmtDate(new Date()))}</span>`
-            + `<span class="chip"><b>Tomorrow</b>${esc(fmtDate(new Date(Date.now() + 86400000)))}</span>`;
-          $('meta').textContent = `data refreshed ${new Date(data.generatedAt).toLocaleTimeString('en-GB', { timeZone: 'Asia/Dhaka' })}`;
-          fill(data.today, 'today');
-          fill(data.tomorrow, 'tomorrow');
-          fill(data.noDate, 'nodate');
-          $('sources').textContent = 'sources: ' + data.sources.map(s => `${s.name}${s.ok ? '' : ' (down)'}`).join(' · ')
-            + ' — auto-refreshes every 5 min';
-        } catch {
-          $('meta').textContent = 'could not load events.json — run `npm run crawl:once` first';
-        }
-      }
-      load();
-      setInterval(load, 5 * 60 * 1000);
-    </script>
+    <footer>
+      {data.sources.length ? `sources: ${data.sources.map(s => s.name + (s.ok ? '' : ' (down)')).join(' · ')} — rebuilt on every deploy` : ''}
+    </footer>
   </body>
 </html>
