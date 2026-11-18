@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-16T16:42:01.963Z",
+  "generatedAt": "2026-11-18T13:29:38.416Z",
   "crawling": {
-    "startedAt": "2026-11-16T16:42:00.529Z",
+    "startedAt": "2026-11-18T13:29:37.683Z",
     "hours": 0,
     "intervalMinutes": 10,
     "cycles": 1
@@ -13,7 +13,7 @@
       "ok": true,
       "items": 8,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.960Z"
+      "lastOkAt": "2026-11-18T13:29:38.413Z"
     },
     {
       "name": "Dhaka Tribune",
@@ -21,15 +21,15 @@
       "ok": true,
       "items": 100,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.960Z"
+      "lastOkAt": "2026-11-18T13:29:38.413Z"
     },
     {
       "name": "Prothom Alo (EN)",
       "url": "https://en.prothomalo.com/feed",
       "ok": true,
-      "items": 4,
+      "items": 8,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.961Z"
+      "lastOkAt": "2026-11-18T13:29:38.414Z"
     },
     {
       "name": "The Business Standard",
@@ -37,128 +37,145 @@
       "ok": true,
       "items": 10,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.961Z"
+      "lastOkAt": "2026-11-18T13:29:38.414Z"
     },
     {
       "name": "Google News · Dhaka events",
       "url": "https://news.google.com/rss/search?q=Dhaka+events+today+OR+tomorrow+when:2d&hl=en&gl=BD&ceid=BD:en",
       "ok": true,
-      "items": 27,
+      "items": 28,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.961Z"
+      "lastOkAt": "2026-11-18T13:29:38.414Z"
     },
     {
       "name": "Google News · Dhaka shows",
       "url": "https://news.google.com/rss/search?q=Dhaka+concert+OR+exhibition+OR+festival+when:2d&hl=en&gl=BD&ceid=BD:en",
       "ok": true,
-      "items": 25,
+      "items": 27,
       "error": null,
-      "lastOkAt": "2026-11-16T16:42:01.961Z"
+      "lastOkAt": "2026-11-18T13:29:38.414Z"
     }
   ],
   "today": [
     {
-      "title": "Global Sourcing Expo begins in Dhaka today - Banglanews24",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBZak1KdVY5b2lNREVuRUQtQTNDWko0U0dneHI2Szh2Tk5PWVZpa2FKMnlwbWFCZ00welFESDdSWUV0RG5rb3hBRUxjMC1qdURPLXNSTzhZUVpDVm1PVnE5Zkc5R2hDZUtHUXhR?oc=5",
+      "title": "Global Sourcing Expo 2026 opens in Dhaka with focus on export diversification - Textile Today",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWZKVms4ZG05Q0IzMWFnOTFqWmtmWEYtM3NTQmlSOEtGczV5cVJ6bVVmVzFMeThnaV9WYlZ1SWdTZUU0QkRVRlFPZ0UwbW9qMDNhOGVzZDVHUGJyMEF5VFNfRWY2Ql9nRlVJOEZ4TXJzY0VnVFIza1Z0d1RMQnhlelI5dEJ1ZjQ5T3pSY1EteVNvUlNjV25XWUdjc0hKRzVFZXJydFQ3dW81SmtoREE?oc=5",
       "source": "Google News · Dhaka events",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTFBZak1KdVY5b2lNREVuRUQtQTNDWko0U0dneHI2Szh2Tk5PWVZpa2FKMnlwbWFCZ00welFESDdSWUV0RG5rb3hBRUxjMC1qdURPLXNSTzhZUVpDVm1PVnE5Zkc5R2hDZUtHUXhR?oc=5\" target=\"_blank\">Global Sourcing Expo begins in Dhaka today</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Banglanews24</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWZKVms4ZG05Q0IzMWFnOTFqWmtmWEYtM3NTQmlSOEtGczV5cVJ6bVVmVzFMeThnaV9WYlZ1SWdTZUU0QkRVRlFPZ0UwbW9qMDNhOGVzZDVHUGJyMEF5VFNfRWY2Ql9nRlVJOEZ4TXJzY0VnVFIza1Z0d1RMQnhlelI5dEJ1ZjQ5T3pSY1EteVNvUlNjV25XWUdjc0hKRzVFZXJydFQ3dW81SmtoREE?oc=5\" target=\"_blank\">Global Sourcing Expo 2026 opens in Dhaka with focus on export diversification</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Textile Today</font>",
       "cue": "today",
-      "published": "Sun, 15 Nov 2026 13:13:33 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Exhibitions, concerts, and theatre headline the capital’s cultural calendar today - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOS2QtY2RVakFwYkQ5MHRwTEU2RnUwYjRaaWxEWFlQN1YxOVRVd3dZV2ItR3pva1BQa3RtSl9aT0p1M1lneUN5VWZEWm1VN0ZPbURQa0FmSGlZY1QwTkdXejI4WHMwT2ZYXzVrdF93WXdmbHdEMWJSMUJGaEtQRUM2NFRBUmZfc3VWeVU5b09hYVFiRE1KTVFPQUZwSkNEVWFfOXVtZ1hGLTlBMEJiT0NNLWJxX0tjQXBUVTZSTmd0Smd0ZDNJa2RKUVlfblBUTGNmdnBJbDVYZmo4Zw?oc=5",
-      "source": "Google News · Dhaka events",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2gFBVV95cUxOS2QtY2RVakFwYkQ5MHRwTEU2RnUwYjRaaWxEWFlQN1YxOVRVd3dZV2ItR3pva1BQa3RtSl9aT0p1M1lneUN5VWZEWm1VN0ZPbURQa0FmSGlZY1QwTkdXejI4WHMwT2ZYXzVrdF93WXdmbHdEMWJSMUJGaEtQRUM2NFRBUmZfc3VWeVU5b09hYVFiRE1KTVFPQUZwSkNEVWFfOXVtZ1hGLTlBMEJiT0NNLWJxX0tjQXBUVTZSTmd0Smd0ZDNJa2RKUVlfblBUTGNmdnBJbDVYZmo4Zw?oc=5\" target=\"_blank\">Exhibitions, concerts, and theatre headline the capital’s cultural calendar today</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
-      "cue": "today",
-      "published": "Sun, 15 Nov 2026 10:29:40 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Three-day Global Sourcing Expo begins today - New Age BD",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSHNpT2R2ZEM4cUZNd2w0c0FwODUxNEkzVEZaTmtuZUJ0Y2pXUExxUE5BOGxkZGkwcG5Ya3EydVJfTzNXYW5rWGRUdXREVGNHWmI0RXoyRHhTRXUwU3puUkl1cmxzb1BFNnB5dENBdWRGNTVYUXl1VnlORGxQR2xPM2JwT0RmU2tfOWtxcGJsTVp3QmFMVm1zUjJuQQ?oc=5",
-      "source": "Google News · Dhaka events",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOSHNpT2R2ZEM4cUZNd2w0c0FwODUxNEkzVEZaTmtuZUJ0Y2pXUExxUE5BOGxkZGkwcG5Ya3EydVJfTzNXYW5rWGRUdXREVGNHWmI0RXoyRHhTRXUwU3puUkl1cmxzb1BFNnB5dENBdWRGNTVYUXl1VnlORGxQR2xPM2JwT0RmU2tfOWtxcGJsTVp3QmFMVm1zUjJuQQ?oc=5\" target=\"_blank\">Three-day Global Sourcing Expo begins today</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">New Age BD</font>",
-      "cue": "today",
-      "published": "Sat, 14 Nov 2026 18:00:00 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
+      "published": "Mon, 16 Nov 2026 19:20:38 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
     }
   ],
-  "tomorrow": [
-    {
-      "title": "Traditional Nabanna festival to be celebrated tomorrow - Bangladesh Sangbad Sangstha (BSS)",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE55eUhXVURWRWt4OFFwY3VPYmdzX0YyVTk4WTFrMk51N1dNcHBKYmFabW5rY0lGV2JMWkMwNGptajFVSV9hcnVRanZXZnpYdw?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE55eUhXVURWRWt4OFFwY3VPYmdzX0YyVTk4WTFrMk51N1dNcHBKYmFabW5rY0lGV2JMWkMwNGptajFVSV9hcnVRanZXZnpYdw?oc=5\" target=\"_blank\">Traditional Nabanna festival to be celebrated tomorrow</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
-      "cue": "tomorrow",
-      "published": "Sun, 15 Nov 2026 13:26:04 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    }
-  ],
+  "tomorrow": [],
   "noDate": [
     {
-      "title": "Rafiq Azam's solo exhibition ‘Threshold’ reflects on art, architecture and memory - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRHczdFRDbjRSUGZrekZlbXl2T0FHNkc5YTAyYkNOQXVBSDdCVUVCUW5oSDIzeFhIWUdVNEt6djBNWWRhVVYyckptYWl1TXR1Tnc0RFNjTDhuVHI2WVdKcUZscjR3RVdBNHk0Y1l3dEtEMkZzWnhWRW1aOHlWd2hCUUQ5aGZrSFJVUTg0SHVnYzg3VlN6RGwtQUhMeVdDTy1BMEJrSkV2b0dpSWRPTEhOTktGQWxUTDlhOXhFZXl3UjJrdE00SHpnNURsYlMxWHEtaVFDeA?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRHczdFRDbjRSUGZrekZlbXl2T0FHNkc5YTAyYkNOQXVBSDdCVUVCUW5oSDIzeFhIWUdVNEt6djBNWWRhVVYyckptYWl1TXR1Tnc0RFNjTDhuVHI2WVdKcUZscjR3RVdBNHk0Y1l3dEtEMkZzWnhWRW1aOHlWd2hCUUQ5aGZrSFJVUTg0SHVnYzg3VlN6RGwtQUhMeVdDTy1BMEJrSkV2b0dpSWRPTEhOTktGQWxUTDlhOXhFZXl3UjJrdE00SHpnNURsYlMxWHEtaVFDeA?oc=5\" target=\"_blank\">Rafiq Azam's solo exhibition ‘Threshold’ reflects on art, architecture and memory</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 21:52:57 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Arnob’s special concert marking 20 years of Hok Kolorob - www.daily-sun.com",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE44YkRaUHRuUlpUd0p3b21GeEVIaXZ2c2Vtc0JRZ2gydHY5ZVdUc3NWMy1XNkoxNVduWkF3SEJWOURUM3NRSGdYU1NlUUNKazhEZTZTeUhYRWFMdGlF?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE44YkRaUHRuUlpUd0p3b21GeEVIaXZ2c2Vtc0JRZ2gydHY5ZVdUc3NWMy1XNkoxNVduWkF3SEJWOURUM3NRSGdYU1NlUUNKazhEZTZTeUhYRWFMdGlF?oc=5\" target=\"_blank\">Arnob’s special concert marking 20 years of Hok Kolorob</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.daily-sun.com</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 18:00:00 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Global Sourcing Expo 2026 begins in Dhaka - Daily Sun",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZG8tWUNYZzNNLVhLNW95clo3cXMwR0VSQ25nZkdablJVc1VOSUp6Z3VjLUFmYndDRmdEMlQ5eGVXaUdhTTRpSnM3b19BRkxydk5WYmFwSUlMbms0SndSeTQyX0NTWGtPaWVkcHh6dXVOVWZ6MHlMajZOYks1SlVUYVhaSmk5THdxbXpCYUln?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPZG8tWUNYZzNNLVhLNW95clo3cXMwR0VSQ25nZkdablJVc1VOSUp6Z3VjLUFmYndDRmdEMlQ5eGVXaUdhTTRpSnM3b19BRkxydk5WYmFwSUlMbms0SndSeTQyX0NTWGtPaWVkcHh6dXVOVWZ6MHlMajZOYks1SlVUYVhaSmk5THdxbXpCYUln?oc=5\" target=\"_blank\">Global Sourcing Expo 2026 begins in Dhaka</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Sun</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 16:59:29 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "The fifth edition of ‘The Flow Fest’—the ‘Winter Wellness Festival’—concludes in a joyful atmosphere - https://businessinbangladesh.com.bd/",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT0NmRXV3MmI0SUhoRnY4RUM4VHBQdXVQcW5LOF9VckNncjk2OU1yby02RWdLT0hsNjN2SlE3U1VqU1BsbTQxdFMxYkxtR0tMcm5uMGRHbkRkYWlCeTZ5UU5vZlVGQ2YySGI3ampzZU5zSjRyZ0xOSXdneHpoTjNoelRMY3Vfazl3b0lxUkJZam56Tkw4ZzB6V01PbGJQOHBmNGpFRzdLMUN0dzJvZTJfZjFuZU1sNmp4eVB3MFpPbUctWFc3MHh3Y1RXdVotZw?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxPT0NmRXV3MmI0SUhoRnY4RUM4VHBQdXVQcW5LOF9VckNncjk2OU1yby02RWdLT0hsNjN2SlE3U1VqU1BsbTQxdFMxYkxtR0tMcm5uMGRHbkRkYWlCeTZ5UU5vZlVGQ2YySGI3ampzZU5zSjRyZ0xOSXdneHpoTjNoelRMY3Vfazl3b0lxUkJZam56Tkw4ZzB6V01PbGJQOHBmNGpFRzdLMUN0dzJvZTJfZjFuZU1sNmp4eVB3MFpPbUctWFc3MHh3Y1RXdVotZw?oc=5\" target=\"_blank\">The fifth edition of ‘The Flow Fest’—the ‘Winter Wellness Festival’—concludes in a joyful atmosphere</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">https://businessinbangladesh.com.bd/</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 14:34:00 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "‘Hok Kolorob’ 20th anniversary concert coming to Dhaka - দৈনিক আগামীর সময়",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VUnFSa0pyVUhUWURfalFxV1FBTVJhT0I1aVBVZ2NVbnA5V294TEdERC1WaXppMjFFZUo3bVE3OWVsYlNQNkVmWVVoQ2ZqLUtBU2xuNGhza25HRWhzeU85QTdTNnU5WGoy?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VUnFSa0pyVUhUWURfalFxV1FBTVJhT0I1aVBVZ2NVbnA5V294TEdERC1WaXppMjFFZUo3bVE3OWVsYlNQNkVmWVVoQ2ZqLUtBU2xuNGhza25HRWhzeU85QTdTNnU5WGoy?oc=5\" target=\"_blank\">‘Hok Kolorob’ 20th anniversary concert coming to Dhaka</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">দৈনিক আগামীর সময়</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 05:09:00 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "BFDC plans film festival honouring Gazi Mazharul Anwar - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNHhIMWVUeWU1UmNyczdaSXZBdUpDbTl4WmlQZWZaOWNIQmVqVmM5dl91a1RIeFdtRWM4THEtSW9vYVltLTE0UXFaU25JenFWTmwxMlJpNTdscGY0VFJPYVRQMXU2U1RYbW53RFNhbWRmT2oyY3NZc2xkbHBUeUYxT0stdDhqYVJ4Ni11Zmg1Nko5cU9abDJFV2FMbHpYS09JbTRRUExZNC1PMUg4bmJRRFJoY0NjX2VpV3c?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNNHhIMWVUeWU1UmNyczdaSXZBdUpDbTl4WmlQZWZaOWNIQmVqVmM5dl91a1RIeFdtRWM4THEtSW9vYVltLTE0UXFaU25JenFWTmwxMlJpNTdscGY0VFJPYVRQMXU2U1RYbW53RFNhbWRmT2oyY3NZc2xkbHBUeUYxT0stdDhqYVJ4Ni11Zmg1Nko5cU9abDJFV2FMbHpYS09JbTRRUExZNC1PMUg4bmJRRFJoY0NjX2VpV3c?oc=5\" target=\"_blank\">BFDC plans film festival honouring Gazi Mazharul Anwar</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
-      "cue": "",
-      "published": "Sun, 15 Nov 2026 04:10:35 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Bangladesh Student Federation announces month-long Victory Festival",
-      "url": "https://www.dhakatribune.com/bangladesh/campus1/424813/bangladesh-student-federation-announces-month-long",
+      "title": "Bangladeshi student Aiyana Hasan wins gold in Queen’s Commonwealth Writing Competition",
+      "url": "https://www.dhakatribune.com/bangladesh/people/424989/bangladeshi-student-aiyana-hasan-wins-gold-in",
       "source": "Dhaka Tribune",
-      "summary": "The festival will feature 13 programs, including discussions, film screenings, competitions, a photo exhibition and a Victory Concert Details",
+      "summary": "Her work explores how shared cultural elements, particularly traditions, can connect people across geographical distances and cultural differences, bringing communities closer together Details",
       "cue": "",
-      "published": "Mon, 16 Nov 2026 19:20:08 +0600",
-      "firstSeenAt": "2026-11-16T16:42:01.960Z"
+      "published": "Wed, 18 Nov 2026 18:36:28 +0600",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "UIU seminar explores lessons from Singapore’s nation-building experience",
+      "url": "https://www.dhakatribune.com/bangladesh/education/425028/uiu-seminar-explores-lessons-from-singapore%E2%80%99s",
+      "source": "Dhaka Tribune",
+      "summary": "Book by UIU professor launched at event organised by university’s School of Business and Economics Details",
+      "cue": "",
+      "published": "Wed, 18 Nov 2026 18:16:04 +0600",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Apec summit: What Trump, Xi and Putin want",
+      "url": "https://www.dhakatribune.com/world/asia/425001/trump-putin-xi-leaders-eyeing-legacies-stage",
+      "source": "Dhaka Tribune",
+      "summary": "Trump seeks diplomatic victories amid domestic political and international pressures Russia seeks diplomatic recognition and favourable terms for ending Ukraine’s war Details",
+      "cue": "",
+      "published": "Wed, 18 Nov 2026 17:21:52 +0600",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Physical theatre makes its debut with 15 women in Dhaka - The Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT1JYbVdPXzQwcU10Z2VlRlp6NlV2S0tSN3ppM2p3UDd4Q003RlZFbVRzcHR0UEM4cXJDX1h2V1UxWFd6VXN5bG94N21ZS1o5MFVIVkRIZDhhUWZLWnEwekU2dWJoeTZsMFdPblY2TVlacXVFdlpZSnROWi1TOG5kcVhxdFVKVFd3R1lfVHl2OA?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPT1JYbVdPXzQwcU10Z2VlRlp6NlV2S0tSN3ppM2p3UDd4Q003RlZFbVRzcHR0UEM4cXJDX1h2V1UxWFd6VXN5bG94N21ZS1o5MFVIVkRIZDhhUWZLWnEwekU2dWJoeTZsMFdPblY2TVlacXVFdlpZSnROWi1TOG5kcVhxdFVKVFd3R1lfVHl2OA?oc=5\" target=\"_blank\">Physical theatre makes its debut with 15 women in Dhaka</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Business Standard</font>",
+      "cue": "",
+      "published": "Wed, 18 Nov 2026 11:25:00 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Global Sourcing Expo 2026 concludes - Bangladesh Sangbad Sangstha (BSS)",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5PbFZ0OTJVZ1BISVd3Z3l3UXFCUlpkOWF6NlJ4YWlKZmtKREJyeF9JdEZVMHZSTUxyZ1VSNVlDUkc1VHhoTXdKRFRxbzhoQVlP?oc=5",
+      "source": "Google News · Dhaka events",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE5PbFZ0OTJVZ1BISVd3Z3l3UXFCUlpkOWF6NlJ4YWlKZmtKREJyeF9JdEZVMHZSTUxyZ1VSNVlDUkc1VHhoTXdKRFRxbzhoQVlP?oc=5\" target=\"_blank\">Global Sourcing Expo 2026 concludes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
+      "cue": "",
+      "published": "Wed, 18 Nov 2026 05:22:49 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "4 artistes to sing in Concert dedicated to Sanjeeb Chy - The New Nation",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ycC0xQzY3THZFQWNUWVdCSkpKQk53WXFkazJFb1hJbFNLQjdkVUhNWUVnUFE5ejhJMVF6QWhDbEUtQVFkWEJEenlaLWJRTm8?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ycC0xQzY3THZFQWNUWVdCSkpKQk53WXFkazJFb1hJbFNLQjdkVUhNWUVnUFE5ejhJMVF6QWhDbEUtQVFkWEJEenlaLWJRTm8?oc=5\" target=\"_blank\">4 artistes to sing in Concert dedicated to Sanjeeb Chy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Nation</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 18:09:47 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Russian House hosts concert celebrating Bangladesh-Russia friendship - Daily Sun",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsSW5aRG12U2pZZGdsenVrd1JYQnlYVGtqeTdFZms4WkNHcVRYejBycVRLOVpyQnptYVIzOU5XUnZSUG1GdVVnWjI2ZTI4OElOS283NmpuMjdVQQ?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsSW5aRG12U2pZZGdsenVrd1JYQnlYVGtqeTdFZms4WkNHcVRYejBycVRLOVpyQnptYVIzOU5XUnZSUG1GdVVnWjI2ZTI4OElOS283NmpuMjdVQQ?oc=5\" target=\"_blank\">Russian House hosts concert celebrating Bangladesh-Russia friendship</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Sun</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 18:00:00 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Village rejoices in Nabanna festival in Rajshahi - Dainik Shiksha",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOb0tZRWFFYTZUMTRoZ2o4aXRYbXNBUUdYTzVVWWFwdnh0Wk94YWNFa05wSmVCQnVWNy0tTVcwM01sU2diZjJNcXBPNm9RUklSTlBDdGttaEhjUXlxcTk5U3BqYTFUNUFOamNZMHQyNnJ2bUJuX3lqSGRWU0NyeDNpR2p3WnNpbkp0UGduWWcxQ2VnQnBNbW5LNg?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOb0tZRWFFYTZUMTRoZ2o4aXRYbXNBUUdYTzVVWWFwdnh0Wk94YWNFa05wSmVCQnVWNy0tTVcwM01sU2diZjJNcXBPNm9RUklSTlBDdGttaEhjUXlxcTk5U3BqYTFUNUFOamNZMHQyNnJ2bUJuX3lqSGRWU0NyeDNpR2p3WnNpbkp0UGduWWcxQ2VnQnBNbW5LNg?oc=5\" target=\"_blank\">Village rejoices in Nabanna festival in Rajshahi</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Dainik Shiksha</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 09:33:08 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "14 Bangladeshi entities join Melbourne global sourcing expo - Bangladesh Sangbad Sangstha (BSS)",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBJajF6UVRnU1FSTXlNUWhlRVV2SzFhNmc1a05ibUtMUS1UOVdpUVVKZWpoR2Frb1lIbVgzbjZ3OEdjQWs2ZElSZkltM2dJRk82?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTFBJajF6UVRnU1FSTXlNUWhlRVV2SzFhNmc1a05ibUtMUS1UOVdpUVVKZWpoR2Frb1lIbVgzbjZ3OEdjQWs2ZElSZkltM2dJRk82?oc=5\" target=\"_blank\">14 Bangladeshi entities join Melbourne global sourcing expo</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 08:50:21 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Arnob to celebrate 20 years of 'Hok Kolorob' with special concert on November 20 - Mathrubhumi English",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVHlSQndMQzRiTVhsWFNZeE55anNOcGRZSVhVWF9mZkNQLVMzRGhWNmxtRGFLUVdYb1BoWThoUjdibzVwSFlqZDJfdTBCSWhJck5NRjFNUm5aUjJfOHZXdEE2Tzd1TkFST3I3M01EcUpWVVppdjRJV1FlUXpPb3B4NFVJMDN3REVUU1NQS3FTb21SaFdLZDZ4cnRR0gGfAUFVX3lxTFBQWFBVaEgtWjBfS05jU2d4Q1I4cVlNeXk1RnA5NlhGaEVwaWtPZVV5UlpoOWstbk84VVdQaXpualJyaE5nY3hyOUw3T2tXRGRtZWVEOFlxMmV6RHVDdnl5WllIQ0E5YVBvSXlmSDVqNGpncVhXMTd0TEFvTVBtQ052cUhJVktUUUpEWFNZYTI3RjlwNUp4UlhRT0VjX1JNUQ?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNVHlSQndMQzRiTVhsWFNZeE55anNOcGRZSVhVWF9mZkNQLVMzRGhWNmxtRGFLUVdYb1BoWThoUjdibzVwSFlqZDJfdTBCSWhJck5NRjFNUm5aUjJfOHZXdEE2Tzd1TkFST3I3M01EcUpWVVppdjRJV1FlUXpPb3B4NFVJMDN3REVUU1NQS3FTb21SaFdLZDZ4cnRR0gGfAUFVX3lxTFBQWFBVaEgtWjBfS05jU2d4Q1I4cVlNeXk1RnA5NlhGaEVwaWtPZVV5UlpoOWstbk84VVdQaXpualJyaE5nY3hyOUw3T2tXRGRtZWVEOFlxMmV6RHVDdnl5WllIQ0E5YVBvSXlmSDVqNGpncVhXMTd0TEFvTVBtQ052cUhJVktUUUpEWFNZYTI3RjlwNUp4UlhRT0VjX1JNUQ?oc=5\" target=\"_blank\">Arnob to celebrate 20 years of 'Hok Kolorob' with special concert on November 20</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mathrubhumi English</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 06:11:51 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Romanian pop star Otilia Bruma returning to Dhaka for live concert - Daily Observer",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5pVy03Mm1ENU9LZ1pUZHM5ZEJmbmxUeXBoUkliWmZzU0lWcU1QTnJqSi0yQU5xV2g4d1gwN3ptRkZWeGhrclBaWFF3?oc=5",
+      "source": "Google News · Dhaka events",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiSkFVX3lxTE5pVy03Mm1ENU9LZ1pUZHM5ZEJmbmxUeXBoUkliWmZzU0lWcU1QTnJqSi0yQU5xV2g4d1gwN3ptRkZWeGhrclBaWFF3?oc=5\" target=\"_blank\">Romanian pop star Otilia Bruma returning to Dhaka for live concert</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Observer</font>",
+      "cue": "",
+      "published": "Tue, 17 Nov 2026 05:46:49 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+    },
+    {
+      "title": "Dhaka Goes Outside: Winter Wellness Festival Opens at Fortis Platinum Lounge - The Daily Star",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbVRDc01VcGZ1ck5UdldOajU4ckt5VUdSZS1ISmNvcFpIWXBTbmVzanVENTRMNmEyUmwyczJEUnU0WGh0dkdpckZmS0dwNFZ4RG90ZnZtanBaRkFsM3RQRU1mVXRJX2FOVUdhNFJfQ2hWUGhKc2RFeklyMzhtcU5XRVdjaUtEUXJ1RnBtZEVzcHpXSFJhQjhKYS1zdGU2djZhYUxkWVEyRDdXU0Rwa2tWLTNjTlJHN0Fnam94X0hZVGJJQQ?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbVRDc01VcGZ1ck5UdldOajU4ckt5VUdSZS1ISmNvcFpIWXBTbmVzanVENTRMNmEyUmwyczJEUnU0WGh0dkdpckZmS0dwNFZ4RG90ZnZtanBaRkFsM3RQRU1mVXRJX2FOVUdhNFJfQ2hWUGhKc2RFeklyMzhtcU5XRVdjaUtEUXJ1RnBtZEVzcHpXSFJhQjhKYS1zdGU2djZhYUxkWVEyRDdXU0Rwa2tWLTNjTlJHN0Fnam94X0hZVGJJQQ?oc=5\" target=\"_blank\">Dhaka Goes Outside: Winter Wellness Festival Opens at Fortis Platinum Lounge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
+      "cue": "",
+      "published": "Mon, 16 Nov 2026 23:56:51 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
     },
     {
       "title": "BRRI celebrates Nabanna festival - Bangladesh Sangbad Sangstha (BSS)",
@@ -166,8 +183,8 @@
       "source": "Google News · Dhaka shows",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JYzduckMtSVM5MHVfYm1mX1FXY1FHQ2NzMVdYYWhka3ZZR2pCVGdVbTdySEdkSkJsWkU1Ny1lQXBIMFA4Wm1mM0tZbw?oc=5\" target=\"_blank\">BRRI celebrates Nabanna festival</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
       "cue": "",
-      "published": "Mon, 16 Nov 2026 16:38:08 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
+      "published": "Mon, 16 Nov 2026 16:39:06 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
     },
     {
       "title": "National Cultural Festival in December: State Minister Ali Nawaz - United News of Bangladesh",
@@ -175,53 +192,17 @@
       "source": "Google News · Dhaka shows",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNRDEtczNsRFV2Q2twUXN6V0I5MW1hX3NCTTRqQ0RpTGJUSEtNckxHU2FjLVZLNWRyRVFXZS1wMFpPMDN0RXZubkhHcjJ6Wm9Nd3dSYmU1dzRyeGZYeEVzMkFNTVUyNkZzS1FYTzFIbnBIY09HRU45bUJGNUR4OGlFbjJ4aTV6VnhyME1tWG1SNVpzdnRmTkFtSFZqd2RvVUNpRGpyYVdPM3lmTDNkeVNQQ1pR?oc=5\" target=\"_blank\">National Cultural Festival in December: State Minister Ali Nawaz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">United News of Bangladesh</font>",
       "cue": "",
-      "published": "Mon, 16 Nov 2026 15:32:40 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
+      "published": "Mon, 16 Nov 2026 15:33:28 GMT",
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
     },
     {
-      "title": "SB, intelligence agencies asked to step up surveillance ahead of Victory Day",
-      "url": "https://www.dhakatribune.com/bangladesh/424772/sb-intelligence-agencies-asked-to-step-up",
-      "source": "Dhaka Tribune",
-      "summary": "The Home Ministry has instructed the Special Branch (SB) and other intelligence agencies to remain on high alert and intensify surveillance to prevent unrest or untoward incidents during the upcoming Victory Day celebrations. Foolproof security arrangements will also be ensured for the movement of the President, the Prime Minister, cabinet members, other local and foreign VVIPs, and people... Details",
-      "cue": "",
-      "published": "Mon, 16 Nov 2026 14:43:45 +0600",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Khaiyam stresses preserving cultural heritage of indigenous communities - Bangladesh Sangbad Sangstha (BSS)",
+      "title": "Khyom stresses preserving cultural heritage of indigenous communities - Bangladesh Sangbad Sangstha (BSS)",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YS2J0RkpORWIyY2w5aXdFV0VkaGNGQkRIRHU5dGczS3h1WlVTQ19EM3ZGd0lXSndqOGhNNmVDOVF0aUhYYUhPVThsRFNEQQ?oc=5",
       "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YS2J0RkpORWIyY2w5aXdFV0VkaGNGQkRIRHU5dGczS3h1WlVTQ19EM3ZGd0lXSndqOGhNNmVDOVF0aUhYYUhPVThsRFNEQQ?oc=5\" target=\"_blank\">Khaiyam stresses preserving cultural heritage of indigenous communities</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5YS2J0RkpORWIyY2w5aXdFV0VkaGNGQkRIRHU5dGczS3h1WlVTQ19EM3ZGd0lXSndqOGhNNmVDOVF0aUhYYUhPVThsRFNEQQ?oc=5\" target=\"_blank\">Khyom stresses preserving cultural heritage of indigenous communities</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
       "cue": "",
       "published": "Mon, 16 Nov 2026 14:04:06 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Bangladesh Student Federation announces month-long Victory Festival - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSk9na0tuS1FnNjNrSE91V1hyYm1qWkdjYUc1T0xIeHZZWm9SX2l5cUdGOEdZcDl1bkVvbXpmcjhUWFc5S1RZTjZtaFdRa212YmJrNkdTeXhkUE9jaEp5UzVfdS1VVUk3T1hzNVB0dkR1ekI2UlVIZ21Ed2ZqRTZqT3Znb0lOYUl0VktieFgtazlxdHQyQUtoV1V2bjFjNjJzSU1uNWQyelTSAa4BQVVfeXFMT3diWDZhV1JlZTRYR0pxclE2UnpUVFJ3SkJmdkJXcFhfNTJ5QzlNZmUzeS1ZaFNlNktqLUFfVEtOdTRRSUU1QTROS0hrd0VKNC1BQVJtRkg4MzV1Qy1FOG4wMy1aakphMDRXM3NWRmpSQnZNUEtpOFN2elZXZzdGcXBqM0NzdS1pVUpiZ2RFZS1ackFOTnVnUXRfUm5XN0RhUS04NDlPLUFtRlIxMWJB?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSk9na0tuS1FnNjNrSE91V1hyYm1qWkdjYUc1T0xIeHZZWm9SX2l5cUdGOEdZcDl1bkVvbXpmcjhUWFc5S1RZTjZtaFdRa212YmJrNkdTeXhkUE9jaEp5UzVfdS1VVUk3T1hzNVB0dkR1ekI2UlVIZ21Ed2ZqRTZqT3Znb0lOYUl0VktieFgtazlxdHQyQUtoV1V2bjFjNjJzSU1uNWQyelTSAa4BQVVfeXFMT3diWDZhV1JlZTRYR0pxclE2UnpUVFJ3SkJmdkJXcFhfNTJ5QzlNZmUzeS1ZaFNlNktqLUFfVEtOdTRRSUU1QTROS0hrd0VKNC1BQVJtRkg4MzV1Qy1FOG4wMy1aakphMDRXM3NWRmpSQnZNUEtpOFN2elZXZzdGcXBqM0NzdS1pVUpiZ2RFZS1ackFOTnVnUXRfUm5XN0RhUS04NDlPLUFtRlIxMWJB?oc=5\" target=\"_blank\">Bangladesh Student Federation announces month-long Victory Festival</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Dhaka Tribune</font>",
-      "cue": "",
-      "published": "Mon, 16 Nov 2026 13:20:08 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Nabanna festival being celebrated - Bangladesh Sangbad Sangstha (BSS)",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5UUHRJS1dmYlVTb2ZKWmpsYmVyMEZZMk5WYWtqWDJ3cElqbEFOM0p0eUtHWWVtT3lWVlRNN0dOMVQxOWlIUkFFVkQwZS1KUQ?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5UUHRJS1dmYlVTb2ZKWmpsYmVyMEZZMk5WYWtqWDJ3cElqbEFOM0p0eUtHWWVtT3lWVlRNN0dOMVQxOWlIUkFFVkQwZS1KUQ?oc=5\" target=\"_blank\">Nabanna festival being celebrated</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
-      "cue": "",
-      "published": "Mon, 16 Nov 2026 09:14:04 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
-    },
-    {
-      "title": "Arnob to celebrate 20 years of ‘Hok Kolorob’ with special concert - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2N3NERPd2pGcEhQUVptZE1rc0Z3NGMxcGNjZ1hiOGRYWmxuTUhtN214ZnBjcXNuclFmam1nWFNHTjNBWW1NS2piWTc5ZVloMVFYREt5RkxnX2dkS2xNVnlyWXNNV1dzb21abEJWWGRRa3ZNLXlpSUtucURGbmlTS1ZuVWxmVkszcENUQU9BQl9HSkczLVBnSEdBdnQ5emRjVU83U3dmaC14M3Z0?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2N3NERPd2pGcEhQUVptZE1rc0Z3NGMxcGNjZ1hiOGRYWmxuTUhtN214ZnBjcXNuclFmam1nWFNHTjNBWW1NS2piWTc5ZVloMVFYREt5RkxnX2dkS2xNVnlyWXNNV1dzb21abEJWWGRRa3ZNLXlpSUtucURGbmlTS1ZuVWxmVkszcENUQU9BQl9HSkczLVBnSEdBdnQ5emRjVU83U3dmaC14M3Z0?oc=5\" target=\"_blank\">Arnob to celebrate 20 years of ‘Hok Kolorob’ with special concert</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
-      "cue": "",
-      "published": "Mon, 16 Nov 2026 05:07:28 GMT",
-      "firstSeenAt": "2026-11-16T16:42:01.961Z"
+      "firstSeenAt": "2026-11-18T13:29:38.414Z"
     }
   ]
 }

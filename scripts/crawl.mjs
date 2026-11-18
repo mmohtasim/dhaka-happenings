@@ -19,7 +19,7 @@ const FEEDS = [
 
 // things people can attend. Deliberately excludes news-report verbs (launch, celebrate, award, rally, procession) —
 // stories *about* those kept flooding the list; ponytail: keyword heuristics, an LLM pass is the upgrade path.
-const KEYWORDS = /\b(concert|festival|exhibit\w*|fair\b|carnival|jatra|theatr\w*|drama|recital|gig\b|open mic|film\b|movie|premiere|screening|documentary|book fair|food fest\w*|expo\b|summit|conference|seminar|symposium|workshop|hackathon|meetup|competition|contest|olympiad|tournament|match\b|derby|marathon|walkathon|parade|fireworks|light show|drone show|fashion week|inaugurat\w*|victory day|eid|mela|bijoy|puja|art\b|cultur\w*)\b/i;
+const KEYWORDS = /\b(concert|festival|exhibit\w*|fair\b|carnival|jatra|theatr(?:e|er)s?\b|drama|recital|gig\b|open mic|film\b|movie|premiere|screening|documentary|book fair|food fest\w*|expo\b|summit|conference|seminar|symposium|workshop|hackathon|meetup|competition|contest|olympiad|tournament|match\b|derby|marathon|walkathon|parade|fireworks|light show|drone show|fashion week|inaugurat\w*|victory day|eid|mela|bijoy|puja|art\b|cultur\w*)\b/i;
 
 const decode = s => s.replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, (m, e) => {
   if (e[0] === '#') {
