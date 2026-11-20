@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-18T13:35:39.210Z",
+  "generatedAt": "2026-11-20T19:59:58.871Z",
   "crawling": {
-    "startedAt": "2026-11-18T13:29:37.683Z",
+    "startedAt": "2026-11-20T19:59:57.890Z",
     "hours": 0,
     "intervalMinutes": 10,
     "cycles": 1
@@ -13,7 +13,7 @@
       "ok": true,
       "items": 8,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.413Z"
+      "lastOkAt": "2026-11-20T19:59:58.822Z"
     },
     {
       "name": "Dhaka Tribune",
@@ -21,15 +21,15 @@
       "ok": true,
       "items": 100,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.413Z"
+      "lastOkAt": "2026-11-20T19:59:58.823Z"
     },
     {
       "name": "Prothom Alo (EN)",
       "url": "https://en.prothomalo.com/feed",
       "ok": true,
-      "items": 8,
+      "items": 2,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.414Z"
+      "lastOkAt": "2026-11-20T19:59:58.825Z"
     },
     {
       "name": "The Business Standard",
@@ -37,7 +37,7 @@
       "ok": true,
       "items": 10,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.414Z"
+      "lastOkAt": "2026-11-20T19:59:58.825Z"
     },
     {
       "name": "Google News · Dhaka events",
@@ -45,92 +45,83 @@
       "ok": true,
       "items": 28,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.414Z"
+      "lastOkAt": "2026-11-20T19:59:58.825Z"
     },
     {
       "name": "Google News · Dhaka shows",
       "url": "https://news.google.com/rss/search?q=Dhaka+concert+OR+exhibition+OR+festival+when:2d&hl=en&gl=BD&ceid=BD:en",
       "ok": true,
-      "items": 27,
+      "items": 24,
       "error": null,
-      "lastOkAt": "2026-11-18T13:29:38.414Z"
+      "lastOkAt": "2026-11-20T19:59:58.826Z"
     }
   ],
   "today": [
     {
-      "title": "Global Sourcing Expo 2026 opens in Dhaka with focus on export diversification - Textile Today",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWZKVms4ZG05Q0IzMWFnOTFqWmtmWEYtM3NTQmlSOEtGczV5cVJ6bVVmVzFMeThnaV9WYlZ1SWdTZUU0QkRVRlFPZ0UwbW9qMDNhOGVzZDVHUGJyMEF5VFNfRWY2Ql9nRlVJOEZ4TXJzY0VnVFIza1Z0d1RMQnhlelI5dEJ1ZjQ5T3pSY1EteVNvUlNjV25XWUdjc0hKRzVFZXJydFQ3dW81SmtoREE?oc=5",
-      "source": "Google News · Dhaka events",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWZKVms4ZG05Q0IzMWFnOTFqWmtmWEYtM3NTQmlSOEtGczV5cVJ6bVVmVzFMeThnaV9WYlZ1SWdTZUU0QkRVRlFPZ0UwbW9qMDNhOGVzZDVHUGJyMEF5VFNfRWY2Ql9nRlVJOEZ4TXJzY0VnVFIza1Z0d1RMQnhlelI5dEJ1ZjQ5T3pSY1EteVNvUlNjV25XWUdjc0hKRzVFZXJydFQ3dW81SmtoREE?oc=5\" target=\"_blank\">Global Sourcing Expo 2026 opens in Dhaka with focus on export diversification</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Textile Today</font>",
+      "title": "National debate festival begins at JU, final rounds Saturday - Bangladesh Sangbad Sangstha (BSS)",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAwWklfd2lPel9JRzB0NVFmajRmeHlUci02R05NZE9nY2tNX3QtLVM3QmhTZTBiZzM4cEQ0TFN4UHVDNGhDek5Zb2M0OA?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTFAwWklfd2lPel9JRzB0NVFmajRmeHlUci02R05NZE9nY2tNX3QtLVM3QmhTZTBiZzM4cEQ0TFN4UHVDNGhDek5Zb2M0OA?oc=5\" target=\"_blank\">National debate festival begins at JU, final rounds Saturday</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bangladesh Sangbad Sangstha (BSS)</font>",
       "cue": "today",
-      "published": "Mon, 16 Nov 2026 19:20:38 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Thu, 19 Nov 2026 16:05:53 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     }
   ],
   "tomorrow": [],
   "noDate": [
     {
-      "title": "Physical theatre makes its debut with 15 women in Dhaka - The Business Standard",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPT1JYbVdPXzQwcU10Z2VlRlp6NlV2S0tSN3ppM2p3UDd4Q003RlZFbVRzcHR0UEM4cXJDX1h2V1UxWFd6VXN5bG94N21ZS1o5MFVIVkRIZDhhUWZLWnEwekU2dWJoeTZsMFdPblY2TVlacXVFdlpZSnROWi1TOG5kcVhxdFVKVFd3R1lfVHl2OA?oc=5",
+      "title": "Int’l elevator expo opens at ICCB - www.daily-sun.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtM0VhODJ6bGNOZng2cFBDaWJoRGVEZUdoX3VLZzljSnJEajVsb1NCbDI2ZHNiZGJ1QXFRTFV0OUE1UHlwNGJyUFRfSVN0bGxHNXdSMW9ZbUI?oc=5",
       "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPT1JYbVdPXzQwcU10Z2VlRlp6NlV2S0tSN3ppM2p3UDd4Q003RlZFbVRzcHR0UEM4cXJDX1h2V1UxWFd6VXN5bG94N21ZS1o5MFVIVkRIZDhhUWZLWnEwekU2dWJoeTZsMFdPblY2TVlacXVFdlpZSnROWi1TOG5kcVhxdFVKVFd3R1lfVHl2OA?oc=5\" target=\"_blank\">Physical theatre makes its debut with 15 women in Dhaka</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Business Standard</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTFAtM0VhODJ6bGNOZng2cFBDaWJoRGVEZUdoX3VLZzljSnJEajVsb1NCbDI2ZHNiZGJ1QXFRTFV0OUE1UHlwNGJyUFRfSVN0bGxHNXdSMW9ZbUI?oc=5\" target=\"_blank\">Int’l elevator expo opens at ICCB</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.daily-sun.com</font>",
       "cue": "",
-      "published": "Wed, 18 Nov 2026 11:25:00 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Thu, 19 Nov 2026 22:11:54 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     },
     {
-      "title": "4 artistes to sing in Concert dedicated to Sanjeeb Chy - The New Nation",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ycC0xQzY3THZFQWNUWVdCSkpKQk53WXFkazJFb1hJbFNLQjdkVUhNWUVnUFE5ejhJMVF6QWhDbEUtQVFkWEJEenlaLWJRTm8?oc=5",
+      "title": "7th Hill Film Festival begins on Nov 26 - New Age BD",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV3NTOG42ZDRQRnl3cGFKemJWdUp1YlZiZGVuVjE1Y1hYb183RGRmd0doUWdScUxLTmM0WFJoNFlnOUdvM0haWC1ZTUR2X3ZVOUdoSFhKcjNTcXo5WGdwZjcwejNlQ2xpeG01REtVcmFOSkcwY0N1QkY2MjgySzlyOFZ0UUVMX1pU?oc=5",
       "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ycC0xQzY3THZFQWNUWVdCSkpKQk53WXFkazJFb1hJbFNLQjdkVUhNWUVnUFE5ejhJMVF6QWhDbEUtQVFkWEJEenlaLWJRTm8?oc=5\" target=\"_blank\">4 artistes to sing in Concert dedicated to Sanjeeb Chy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Nation</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV3NTOG42ZDRQRnl3cGFKemJWdUp1YlZiZGVuVjE1Y1hYb183RGRmd0doUWdScUxLTmM0WFJoNFlnOUdvM0haWC1ZTUR2X3ZVOUdoSFhKcjNTcXo5WGdwZjcwejNlQ2xpeG01REtVcmFOSkcwY0N1QkY2MjgySzlyOFZ0UUVMX1pU?oc=5\" target=\"_blank\">7th Hill Film Festival begins on Nov 26</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">New Age BD</font>",
       "cue": "",
-      "published": "Tue, 17 Nov 2026 18:09:47 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Fri, 20 Nov 2026 19:17:00 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     },
     {
-      "title": "Russian House hosts concert celebrating Bangladesh-Russia friendship - Daily Sun",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsSW5aRG12U2pZZGdsenVrd1JYQnlYVGtqeTdFZms4WkNHcVRYejBycVRLOVpyQnptYVIzOU5XUnZSUG1GdVVnWjI2ZTI4OElOS283NmpuMjdVQQ?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBsSW5aRG12U2pZZGdsenVrd1JYQnlYVGtqeTdFZms4WkNHcVRYejBycVRLOVpyQnptYVIzOU5XUnZSUG1GdVVnWjI2ZTI4OElOS283NmpuMjdVQQ?oc=5\" target=\"_blank\">Russian House hosts concert celebrating Bangladesh-Russia friendship</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Sun</font>",
+      "title": "EWU hosts 12th BELTA international conference",
+      "url": "https://www.dhakatribune.com/bangladesh/education/425260/ewu-hosts-12th-belta-international-conference",
+      "source": "Dhaka Tribune",
+      "summary": "Two-day event brings together 650 scholars, educators and researchers from 13 countries to discuss challenges in English language education Details",
       "cue": "",
-      "published": "Tue, 17 Nov 2026 18:00:00 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Fri, 20 Nov 2026 18:01:38 +0600",
+      "firstSeenAt": "2026-11-20T19:59:58.824Z"
     },
     {
-      "title": "Arnob to celebrate 20 years of 'Hok Kolorob' with special concert on November 20 - Mathrubhumi English",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVHlSQndMQzRiTVhsWFNZeE55anNOcGRZSVhVWF9mZkNQLVMzRGhWNmxtRGFLUVdYb1BoWThoUjdibzVwSFlqZDJfdTBCSWhJck5NRjFNUm5aUjJfOHZXdEE2Tzd1TkFST3I3M01EcUpWVVppdjRJV1FlUXpPb3B4NFVJMDN3REVUU1NQS3FTb21SaFdLZDZ4cnRR0gGfAUFVX3lxTFBQWFBVaEgtWjBfS05jU2d4Q1I4cVlNeXk1RnA5NlhGaEVwaWtPZVV5UlpoOWstbk84VVdQaXpualJyaE5nY3hyOUw3T2tXRGRtZWVEOFlxMmV6RHVDdnl5WllIQ0E5YVBvSXlmSDVqNGpncVhXMTd0TEFvTVBtQ052cUhJVktUUUpEWFNZYTI3RjlwNUp4UlhRT0VjX1JNUQ?oc=5",
+      "title": "First National Street Photo Festival opens at AFD - United News of Bangladesh",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3RkNjRHS2Zmd3YxMGdNSmJOdUtIejhWOFB5OGRaT1FaTzctM0dYVTVhT2VNQ1ZVNFJfLWduaDNjR2NwZ1IyN1dMdWI1SEJYTjNHYUxjMHVaa2ZzQTNYcWVRSjJ6TFZJQV9IWGN0RENqR05NVmJwT1lONGZZblZzNUZzbU1acDhGMk9TNkxCcUVvVFY3VFBfYmVR?oc=5",
       "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxNVHlSQndMQzRiTVhsWFNZeE55anNOcGRZSVhVWF9mZkNQLVMzRGhWNmxtRGFLUVdYb1BoWThoUjdibzVwSFlqZDJfdTBCSWhJck5NRjFNUm5aUjJfOHZXdEE2Tzd1TkFST3I3M01EcUpWVVppdjRJV1FlUXpPb3B4NFVJMDN3REVUU1NQS3FTb21SaFdLZDZ4cnRR0gGfAUFVX3lxTFBQWFBVaEgtWjBfS05jU2d4Q1I4cVlNeXk1RnA5NlhGaEVwaWtPZVV5UlpoOWstbk84VVdQaXpualJyaE5nY3hyOUw3T2tXRGRtZWVEOFlxMmV6RHVDdnl5WllIQ0E5YVBvSXlmSDVqNGpncVhXMTd0TEFvTVBtQ052cUhJVktUUUpEWFNZYTI3RjlwNUp4UlhRT0VjX1JNUQ?oc=5\" target=\"_blank\">Arnob to celebrate 20 years of 'Hok Kolorob' with special concert on November 20</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mathrubhumi English</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3RkNjRHS2Zmd3YxMGdNSmJOdUtIejhWOFB5OGRaT1FaTzctM0dYVTVhT2VNQ1ZVNFJfLWduaDNjR2NwZ1IyN1dMdWI1SEJYTjNHYUxjMHVaa2ZzQTNYcWVRSjJ6TFZJQV9IWGN0RENqR05NVmJwT1lONGZZblZzNUZzbU1acDhGMk9TNkxCcUVvVFY3VFBfYmVR?oc=5\" target=\"_blank\">First National Street Photo Festival opens at AFD</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">United News of Bangladesh</font>",
       "cue": "",
-      "published": "Tue, 17 Nov 2026 06:11:51 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Fri, 20 Nov 2026 17:16:08 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     },
     {
-      "title": "Romanian pop star Otilia Bruma returning to Dhaka for live concert - Daily Observer",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5pVy03Mm1ENU9LZ1pUZHM5ZEJmbmxUeXBoUkliWmZzU0lWcU1QTnJqSi0yQU5xV2g4d1gwN3ptRkZWeGhrclBaWFF3?oc=5",
-      "source": "Google News · Dhaka events",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiSkFVX3lxTE5pVy03Mm1ENU9LZ1pUZHM5ZEJmbmxUeXBoUkliWmZzU0lWcU1QTnJqSi0yQU5xV2g4d1gwN3ptRkZWeGhrclBaWFF3?oc=5\" target=\"_blank\">Romanian pop star Otilia Bruma returning to Dhaka for live concert</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Daily Observer</font>",
+      "title": "Three-day Global Sourcing Expo begins at Bangladesh-China Friendship Exhibition Centre - The Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQanp2STdBdWJqZmRwdWxMcU9ENF82Q0k1Q2FDTmx4NFpZVk1pUkJUeUZjbFI5d3ZFNl8yR09wZkpKUG9zOWtXdXgyT1FTS2pUZ2UteFl1ekdEZ0Z3SEZsWXJ3Z3A3ZC05c1Y2cDJBTk8yV1ZuNFB0c2xibHRwWUVoQmFiMzRHQURYQmlaSGIwN2pNVHVMbkxVS01BVUhTemlOemhzQmxVQjBQblpZRGlYcktMVmFlc0NrcFVmeVY0MTI?oc=5",
+      "source": "Google News · Dhaka shows",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxQanp2STdBdWJqZmRwdWxMcU9ENF82Q0k1Q2FDTmx4NFpZVk1pUkJUeUZjbFI5d3ZFNl8yR09wZkpKUG9zOWtXdXgyT1FTS2pUZ2UteFl1ekdEZ0Z3SEZsWXJ3Z3A3ZC05c1Y2cDJBTk8yV1ZuNFB0c2xibHRwWUVoQmFiMzRHQURYQmlaSGIwN2pNVHVMbkxVS01BVUhTemlOemhzQmxVQjBQblpZRGlYcktMVmFlc0NrcFVmeVY0MTI?oc=5\" target=\"_blank\">Three-day Global Sourcing Expo begins at Bangladesh-China Friendship Exhibition Centre</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Business Standard</font>",
       "cue": "",
-      "published": "Tue, 17 Nov 2026 05:46:49 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Fri, 20 Nov 2026 04:36:57 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     },
     {
-      "title": "Dhaka Goes Outside: Winter Wellness Festival Opens at Fortis Platinum Lounge - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbVRDc01VcGZ1ck5UdldOajU4ckt5VUdSZS1ISmNvcFpIWXBTbmVzanVENTRMNmEyUmwyczJEUnU0WGh0dkdpckZmS0dwNFZ4RG90ZnZtanBaRkFsM3RQRU1mVXRJX2FOVUdhNFJfQ2hWUGhKc2RFeklyMzhtcU5XRVdjaUtEUXJ1RnBtZEVzcHpXSFJhQjhKYS1zdGU2djZhYUxkWVEyRDdXU0Rwa2tWLTNjTlJHN0Fnam94X0hZVGJJQQ?oc=5",
+      "title": "Pan Pacific Sonargaon Dhaka hosts seafood festival - The Bangladesh Monitor",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZi16SjJEWXJWNWlrNjF4TUF5MmhFMDlFMzB6ZlZIMVNnc083YXZTcWxRQ1hDQW9yMGM4NGR6MXg5UDNBdTJPV3dLNV85TngwZjhDNHlqcXdNZmFMMDNTVmRpcUk5c0dnZ1JvR0tydEFNc1FQTGZMNmFVYUl3Zmw1SjFmbE1oNnlvd2dfS19LNHJRVXhW?oc=5",
       "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbVRDc01VcGZ1ck5UdldOajU4ckt5VUdSZS1ISmNvcFpIWXBTbmVzanVENTRMNmEyUmwyczJEUnU0WGh0dkdpckZmS0dwNFZ4RG90ZnZtanBaRkFsM3RQRU1mVXRJX2FOVUdhNFJfQ2hWUGhKc2RFeklyMzhtcU5XRVdjaUtEUXJ1RnBtZEVzcHpXSFJhQjhKYS1zdGU2djZhYUxkWVEyRDdXU0Rwa2tWLTNjTlJHN0Fnam94X0hZVGJJQQ?oc=5\" target=\"_blank\">Dhaka Goes Outside: Winter Wellness Festival Opens at Fortis Platinum Lounge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Daily Star</font>",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOZi16SjJEWXJWNWlrNjF4TUF5MmhFMDlFMzB6ZlZIMVNnc083YXZTcWxRQ1hDQW9yMGM4NGR6MXg5UDNBdTJPV3dLNV85TngwZjhDNHlqcXdNZmFMMDNTVmRpcUk5c0dnZ1JvR0tydEFNc1FQTGZMNmFVYUl3Zmw1SjFmbE1oNnlvd2dfS19LNHJRVXhW?oc=5\" target=\"_blank\">Pan Pacific Sonargaon Dhaka hosts seafood festival</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Bangladesh Monitor</font>",
       "cue": "",
-      "published": "Mon, 16 Nov 2026 23:56:51 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
-    },
-    {
-      "title": "National Cultural Festival in December: State Minister Ali Nawaz - United News of Bangladesh",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRDEtczNsRFV2Q2twUXN6V0I5MW1hX3NCTTRqQ0RpTGJUSEtNckxHU2FjLVZLNWRyRVFXZS1wMFpPMDN0RXZubkhHcjJ6Wm9Nd3dSYmU1dzRyeGZYeEVzMkFNTVUyNkZzS1FYTzFIbnBIY09HRU45bUJGNUR4OGlFbjJ4aTV6VnhyME1tWG1SNVpzdnRmTkFtSFZqd2RvVUNpRGpyYVdPM3lmTDNkeVNQQ1pR?oc=5",
-      "source": "Google News · Dhaka shows",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNRDEtczNsRFV2Q2twUXN6V0I5MW1hX3NCTTRqQ0RpTGJUSEtNckxHU2FjLVZLNWRyRVFXZS1wMFpPMDN0RXZubkhHcjJ6Wm9Nd3dSYmU1dzRyeGZYeEVzMkFNTVUyNkZzS1FYTzFIbnBIY09HRU45bUJGNUR4OGlFbjJ4aTV6VnhyME1tWG1SNVpzdnRmTkFtSFZqd2RvVUNpRGpyYVdPM3lmTDNkeVNQQ1pR?oc=5\" target=\"_blank\">National Cultural Festival in December: State Minister Ali Nawaz</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">United News of Bangladesh</font>",
-      "cue": "",
-      "published": "Mon, 16 Nov 2026 15:33:28 GMT",
-      "firstSeenAt": "2026-11-18T13:29:38.414Z"
+      "published": "Fri, 20 Nov 2026 03:33:45 GMT",
+      "firstSeenAt": "2026-11-20T19:59:58.826Z"
     }
   ]
 }
